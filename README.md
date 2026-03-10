@@ -1,4 +1,3 @@
-
 ## Week 01 Exercises
 
 - [Exercise 1](https://github.com/josephjohn2806/cse210-projects/tree/main/week01/Exercise1)
