@@ -1,49 +1,47 @@
 using System;
 
-namespace Exercise5
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            DisplayWelcome();
+        DisplayWelcome();
 
-            string userName = PromptUserName();
-            int userNumber = PromptUserNumber();
+        string name = PromptUserName();
 
-            int squaredNumber = SquareNumber(userNumber);
+        int number = PromptUserNumber();
 
-            DisplayResult(userName, squaredNumber);
-        }
+        int squaredNumber = SquareNumber(number);
 
-        static void DisplayWelcome()
-        {
-            Console.WriteLine("Welcome to the program!");
-        }
+        DisplayResult(name, squaredNumber);
+    }
 
-        static string PromptUserName()
-        {
-            Console.Write("Please enter your name: ");
-            string name = Console.ReadLine();
-            return name;
-        }
+    static void DisplayWelcome()
+    {
+        Console.WriteLine("Welcome to the Program!");
+    }
 
-        static int PromptUserNumber()
-        {
-            Console.Write("Please enter your favorite number: ");
-            int number = int.Parse(Console.ReadLine());
-            return number;
-        }
+    static string PromptUserName()
+    {
+        Console.Write("Please enter your name: ");
+        string name = Console.ReadLine();
+        return name;
+    }
 
-        static int SquareNumber(int number)
-        {
-            int square = number * number;
-            return square;
-        }
+    static int PromptUserNumber()
+    {
+        Console.Write("Please enter your favorite number: ");
+        int number = int.Parse(Console.ReadLine());
+        return number;
+    }
 
-        static void DisplayResult(string name, int square)
-        {
-            Console.WriteLine($"{name}, the square of your number is {square}");
-        }
+    static int SquareNumber(int number)
+    {
+        int result = number * number;
+        return result;
+    }
+
+    static void DisplayResult(string name, int squaredNumber)
+    {
+        Console.WriteLine($"{name}, the square of your number is {squaredNumber}");
     }
 }

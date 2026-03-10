@@ -1,66 +1,31 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 
-namespace Exercise4
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        Random random = new Random();
+        int magicNumber = random.Next(1, 101); // number between 1 and 100
+        int guess = -1;
+
+        Console.WriteLine("Welcome to the Guess My Number Game!");
+
+        while (guess != magicNumber)
         {
-            List<int> numbers = new List<int>();
-            int userNumber = -1;
+            Console.Write("What is your guess? ");
+            guess = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter a list of numbers, type 0 when finished.");
-
-            while (userNumber != 0)
+            if (guess < magicNumber)
             {
-                Console.Write("Enter number: ");
-                userNumber = int.Parse(Console.ReadLine());
-
-                if (userNumber != 0)
-                {
-                    numbers.Add(userNumber);
-                }
+                Console.WriteLine("Higher");
             }
-
-            int sum = 0;
-            foreach (int number in numbers)
+            else if (guess > magicNumber)
             {
-                sum += number;
+                Console.WriteLine("Lower");
             }
-
-            double average = (double)sum / numbers.Count;
-
-            int max = numbers[0];
-            foreach (int number in numbers)
+            else
             {
-                if (number > max)
-                {
-                    max = number;
-                }
-            }
-
-            Console.WriteLine($"The sum is: {sum}");
-            Console.WriteLine($"The average is: {average}");
-            Console.WriteLine($"The largest number is: {max}");
-
-            // Stretch Challenges
-            int smallestPositive = int.MaxValue;
-            foreach (int number in numbers)
-            {
-                if (number > 0 && number < smallestPositive)
-                {
-                    smallestPositive = number;
-                }
-            }
-            Console.WriteLine($"The smallest positive number is: {smallestPositive}");
-
-            numbers.Sort();
-            Console.WriteLine("The sorted list is:");
-            foreach (int number in numbers)
-            {
-                Console.WriteLine(number);
+                Console.WriteLine("You guessed it!");
             }
         }
     }

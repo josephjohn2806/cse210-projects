@@ -1,80 +1,31 @@
 using System;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        Console.Write("Enter your score: ");
+        int score = Convert.ToInt32(Console.ReadLine());
+
+        if (score >= 90)
         {
-            int percent;
-            while (true)
-            {
-                Console.Write("What is your grade percentage? ");
-                string input = Console.ReadLine();
-                if (int.TryParse(input, out percent))
-                {
-                    break;
-                }
-                Console.WriteLine("Please enter a valid number.");
-            }
-
-            string letter = "";
-
-            if (percent >= 90)
-            {
-                letter = "A";
-            }
-            else if (percent >= 80)
-            {
-                letter = "B";
-            }
-            else if (percent >= 70)
-            {
-                letter = "C";
-            }
-            else if (percent >= 60)
-            {
-                letter = "D";
-            }
-            else
-            {
-                letter = "F";
-            }
-
-            string sign = "";
-            int lastDigit = percent % 10;
-
-            if (lastDigit >= 7)
-            {
-                sign = "+";
-            }
-            else if (lastDigit < 3)
-            {
-                sign = "-";
-            }
-            else
-            {
-                sign = "";
-            }
-
-            if (letter == "A" && sign == "+")
-            {
-                sign = "";
-            }
-            
-            if (letter == "F")
-            {
-                sign = "";
-            }
-
-            Console.WriteLine($"Your grade is: {letter}{sign}");
-
-            if (percent >= 70)
-            {
-                Console.WriteLine("Congratulations! You passed the course.");
-            }
-            else
-            {
-                Console.WriteLine("Don't give up! You'll get it next time.");
-            }
+            Console.WriteLine("Your grade is A");
+        }
+        else if (score >= 80)
+        {
+            Console.WriteLine("Your grade is B");
+        }
+        else if (score >= 70)
+        {
+            Console.WriteLine("Your grade is C");
+        }
+        else if (score >= 60)
+        {
+            Console.WriteLine("Your grade is D");
+        }
+        else
+        {
+            Console.WriteLine("Your grade is F");
         }
     }
 }
