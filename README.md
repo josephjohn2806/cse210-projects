@@ -1,4 +1,10 @@
-# cse210-ww-student-template
-This is the starter code for students in the worldwide content version of CSE 210.
+# CSE210 Projects
 
-This repository contains the starter code for many different projects. They are arranged folders by week. There is also an an empty sandbox project that can be used to play around with any concept you would like.
+## Week 01 Exercises
+
+- Exercise 1: https://github.com/josephjohn2806/cse210-projects/tree/main/week01/Exercise1
+- Exercise 2: https://github.com/josephjohn2806/cse210-projects/tree/main/week01/Exercise2
+- Exercise 3: https://github.com/josephjohn2806/cse210-projects/tree/main/week01/Exercise3
+- Exercise 4: https://github.com/josephjohn2806/cse210-projects/tree/main/week01/Exercise4
+- Exercise 5: https://github.com/josephjohn2806/cse210-projects/tree/main/week01/Exercise5
+
