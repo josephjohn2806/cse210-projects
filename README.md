@@ -7,5 +7,6 @@
 - [Exercise 5](https://github.com/josephjohn2806/cse210-projects/tree/main/week01/Exercise5)
 
 # week02 journal program
+- [journal program](https://github.com/josephjohn2806/cse210-projects/tree/main/week02/journal)
 
 
