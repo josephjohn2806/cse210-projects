@@ -13,3 +13,7 @@ Week 02 Journal Program
 
 week 03 Scripture Memorizer
 "ScriptureMemorizer" (https://github.com/josephjohn2806/cse210-projects/tree/main/week03/ScriptureMemorizer)
+
+week 04 OnlineOrdering and YoutubeVideos
+"OnlineOrdering" (https://github.com/josephjohn2806/cse210-projects/tree/main/week04/OnlineOrdering)
+"YoutubeVideos" (https://github.com/josephjohn2806/cse210-projects/tree/main/week04/YoutubeVideos)
