@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\cse210-projects\\week04\\YouTubeVideos\\YouTubeVideos.csproj": {}
+    "C:\\cse210-projects\\week04\\YoutubeVideos\\YouTubeVideos.csproj": {}
   },
   "projects": {
-    "C:\\cse210-projects\\week04\\YouTubeVideos\\YouTubeVideos.csproj": {
+    "C:\\cse210-projects\\week04\\YoutubeVideos\\YouTubeVideos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\cse210-projects\\week04\\YouTubeVideos\\YouTubeVideos.csproj",
+        "projectUniqueName": "C:\\cse210-projects\\week04\\YoutubeVideos\\YouTubeVideos.csproj",
         "projectName": "YouTubeVideos",
-        "projectPath": "C:\\cse210-projects\\week04\\YouTubeVideos\\YouTubeVideos.csproj",
+        "projectPath": "C:\\cse210-projects\\week04\\YoutubeVideos\\YouTubeVideos.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "C:\\cse210-projects\\week04\\YouTubeVideos\\obj\\",
+        "outputPath": "C:\\cse210-projects\\week04\\YoutubeVideos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config"
