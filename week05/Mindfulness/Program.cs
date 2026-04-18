@@ -1,9 +1,42 @@
 using System;
 
-class Program
+string choice = "";
+
+// The main program loop
+while (choice != "4")
 {
-    static void Main(string[] args)
+    Console.Clear();
+    Console.WriteLine("Menu Options:");
+    Console.WriteLine("  1. Start breathing activity");
+    Console.WriteLine("  2. Start reflecting activity");
+    Console.WriteLine("  3. Start listing activity");
+    Console.WriteLine("  4. Quit");
+    Console.Write("Select a choice from the menu: ");
+    
+    choice = Console.ReadLine();
+
+    if (choice == "1")
     {
-        Console.WriteLine("Hello World! This is the Mindfulness Project.");
+        BreathingActivity breathing = new BreathingActivity();
+        breathing.Run();
+    }
+    else if (choice == "2")
+    {
+        ReflectingActivity reflecting = new ReflectingActivity();
+        reflecting.Run();
+    }
+    else if (choice == "3")
+    {
+        ListingActivity listing = new ListingActivity();
+        listing.Run();
+    }
+    else if (choice == "4")
+    {
+        Console.WriteLine("Goodbye. Stay mindful!");
+    }
+    else
+    {
+        Console.WriteLine("Invalid selection. Please choose 1-4.");
+        Thread.Sleep(2000);
     }
 }
