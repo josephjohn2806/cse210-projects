@@ -20,3 +20,17 @@ Week 04 OnlineOrdering and YoutubeVideos
 
 "OnlineOrdering" (https://github.com/josephjohn2806/cse210-projects/tree/main/week04/OnlineOrdering)
 "YoutubeVideos" (https://github.com/josephjohn2806/cse210-projects/tree/main/week04/YoutubeVideos)
+
+Week 05 Mindfulness and Homework
+
+"Mindfulness" (https://github.com/josephjohn2806/cse210-projects/tree/main/week05/Mindfulness)
+"Homework" (https://github.com/josephjohn2806/cse210-projects/tree/main/week05/Homework)
+
+Week 06 Shapes and EternalQuest
+
+"Shapes" (https://github.com/josephjohn2806/cse210-projects/tree/main/week06/Shapes)
+"EternalQuest" (https://github.com/josephjohn2806/cse210-projects/tree/main/week06/EternalQuest)
+
+Week 07 Exercise Tracking
+
+"ExerciseTracking" (https://github.com/josephjohn2806/cse210-projects/tree/main/week07/ExerciseTracking)
