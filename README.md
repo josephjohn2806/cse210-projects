@@ -8,9 +8,10 @@ Week 01 Exercises
 "Exercise 4" (https://github.com/josephjohn2806/cse210-projects/tree/main/week01/Exercise4)
 "Exercise 5" (https://github.com/josephjohn2806/cse210-projects/tree/main/week01/Exercise5)
 
-Week 02 Journal Program
+Week 02 Journal and Resumes
 
 "Journal Program" (https://github.com/josephjohn2806/cse210-projects/tree/main/week02/Journal)
+"Resumes" (https://github.com/josephjohn2806/cse210-projects/tree/main/week02/Resumes)
 
 Week 03 Scripture Memorizer
 
