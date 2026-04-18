@@ -1,16 +1,13 @@
-namespace ExerciseTracking
+public class Running : Activity
 {
-    public class Running : Activity
+    private double _speed;
+
+    public Running(string date, int minutes, double speed) : base(date, minutes)
     {
-        private double _speed;
-
-        public Running(string date, int minutes, double speed) : base(date, minutes)
-        {
-            _speed = speed;
-        }
-
-        public override double GetDistance() => (_speed * GetMinutes()) / 60;
-        public override double GetSpeed() => _speed;
-        public override double GetPace() => 60 / _speed;
+        _speed = speed;
     }
+
+    public override double GetDistance() => (_speed * GetMinutes()) / 60;
+    public override double GetSpeed() => _speed;
+    public override double GetPace() => 60 / _speed;
 }

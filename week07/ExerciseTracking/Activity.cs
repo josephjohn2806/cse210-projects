@@ -1,55 +1,26 @@
-namespace ExerciseTracking
-{
-    public abstract class Activity
-    {
-        private string _date;
-        private int _minutes;
-
-        public Activity(string date, int minutes)
-        {
-            _date = date;
-            _minutes = minutes;
-        }
-
-        public string GetDate() => _date;
-        public int GetMinutes() => _minutes;
-
-        public abstract double GetDistance();
-        public abstract double GetSpeed();
-        public abstract double GetPace();
-
-        public string GetSummary()
-        {
-            return $"{_date} {GetType().Name} ({_minutes} min): Distance {GetDistance():F1} km, Speed: {GetSpeed():F1} kph, Pace: {GetPace():F1} min per km";
-        }
-    }
-}
 using System;
 
-namespace ExerciseTracking
+public abstract class Activity
 {
-    public abstract class Activity
+    private string _date;
+    private int _minutes;
+
+    public Activity(string date, int minutes)
     {
-        private string _date;
-        private int _minutes;
+        _date = date;
+        _minutes = minutes;
+    }
 
-        public Activity(string date, int minutes)
-        {
-            _date = date;
-            _minutes = minutes;
-        }
+    public string GetDate() => _date;
+    public int GetMinutes() => _minutes;
 
-        public int GetMinutes() => _minutes;
+    public abstract double GetDistance();
+    public abstract double GetSpeed();
+    public abstract double GetPace();
 
-        public abstract double GetDistance();
-        public abstract double GetSpeed();
-        public abstract double GetPace();
-
-        public virtual string GetSummary()
-        {
-            return $"{_date} {this.GetType().Name} ({_minutes} min): " +
-                   $"Distance {GetDistance():0.1} km, Speed {GetSpeed():0.1} kph, Pace: {GetPace():0.1} min per km";
-        }
+    public string GetSummary()
+    {
+        return $"{_date} {GetType().Name} ({_minutes} min): Distance {GetDistance():F1} km, Speed: {GetSpeed():F1} kph, Pace: {GetPace():F1} min per km";
     }
 }
 
